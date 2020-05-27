@@ -1,0 +1,179 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+/* BASE DA BARRA DE NAVEGACAO-----------------------*/
+.menu{z-index: 1;
+	font-size: 2.5vh;
+	width: 100%;
+	height: 9.2vh;
+	/*border: solid 1px black;/*----------------------------------------------  BORDAS DE CONTROLE*/
+	background-color: white;
+	font-family: 'Arial';
+	font-weight: bold;
+}
+/*----------------IMGlogo-----------------------*/
+#navlogo{float: left;
+	width: 20vh;
+	margin-top: 3vh;
+	margin-left: 3vh;
+
+}
+
+.menu ul{
+	list-style: none;
+	position:relative;
+}
+/*---------------SUBBOTOES DA NAV------------------------*/
+.listasm{
+/*border-radius: 0px 0px 20px 20px; */
+	z-index: 1;
+	width: 100%;
+	font-size: 2.5vh;
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	background-color: white;
+	color:black;/*COR BRANCA*/
+
+}
+/*---------------BOTOES DA NAV------------------------*/
+.listam{z-index: 1;
+	font-size: 2.5vh;
+	float: right;
+	/*border: solid 1px black;/*----------------------------------------------  BORDAS DE CONTROLE*/
+	width: 10%;
+}
+/*---------------LINKS DA NAV------------------------*/
+.listaA{
+	padding: 2.5vh;
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	background-color: white;/*#222  COM CINZA*/
+	color: green;
+}
+
+.submenu {
+	position: absolute;
+	visibility: hidden;
+}
+
+
+/*BORDA DE BAIXO DO SUBMENU*/
+.menu ul ul li{
+	float:none;
+	width: 100%;
+/*border-bottom: solid 1px black;*/
+}
+/*COR DO LINK SUBMENU*/
+.menu ul ul li a{
+
+}
+
+
+/*--------------------------------------COR e EFEITOS AO PASSAR O MOUSE*/
+.listaA:hover{
+/*background-color: rgba(0,255,127,0.5);*/
+	color:black;
+	
+	z-index: 1;
+	transition: 2s;
+	text-shadow: 0.5vh 0.5vh 2vh rgba(0,255,127,1);
+
+}
+.listasm:hover{
+	
+	text-shadow: 0.5vh 0.5vh 2vh rgba(0,255,127,1);
+}
+
+.menu ul li:hover ul{
+	visibility: visible;
+}
+
+#navbotaoresp{background-color: white;
+
+}
+#botaoresp{
+	
+}
+
+
+label[for="bt_menu"]{
+	padding: 1vh;
+	background-color: white;
+	color:rgba(0,255,127,0.5);
+	font-size: 'Arial';
+	text-align: center;
+	font-size: 7vh;
+	cursor: pointer;
+	margin-right: 0%;
+	
+	height: 8vh;
+}
+/*OCULTA O CHECKBOX*/
+#bt_menu{
+	display: none;
+}
+/*OCULTA O BOTAO ENQUANTO MAIOR QUE 800px*/
+label[for="bt_menu"]{
+	display: none;
+}
+
+
+
+/*-----------------------------PARTE RESPONSIVA ABAIXO DE 800PX---------------------------------------*/
+@media(max-width: 600px){
+	/*FAZ O ICONE DO BOTAO DO MENU MOSTRAR É A LABEL DO CHECKBOX*/
+	label[for="bt_menu"]{
+		display: block;
+		margin-left: 80vw;		
+	}
+/*DESLOCACAO DO MENU PARA MARGEM 0*/
+	#bt_menu:checked ~ .menu{
+		margin-left: 0;
+
+	}
+	#navlogo{display: none;}
+
+	.menu {
+		margin-left: -100%;
+		transition: all .4s;
+	}
+	.menu ul li{
+		width: 100%;
+		float: none;
+	}
+
+	.menu ul ul{
+		position: static;
+		overflow: hidden;
+		max-height: 0;
+		transition: all .4s;
+	}
+	.menu ul li:hover ul{
+		height: auto;
+		max-height: 200px;
+
+	}
+
+	#navbotaoresp{
+	/*	background-color: red;*/
+		
+	
+	}
+	#botaoresp{
+
+	}
+	
+
+
+
+
+
+
+
+
+
+}

@@ -1,0 +1,223 @@
+/*
+paleta de cores
+https://celke.com.br/artigo/tabela-de-cores-html-nome-hexadecimal-rgb
+*/
+
+#corpo{z-index: -1;
+	color: red;
+	width: 90%;
+	height: 70vh;
+	margin-left: auto;
+    margin-right: auto;
+    display: flex;
+	/*border: solid 2px black;*/
+	position: relative;
+		
+}
+#nav{z-index: 1;}
+/*----------------------------------------------------------------------------------------*/
+/*  PRIMEIRA DIV COM SOBRE*/
+#home2img{display: none;	}
+#home1{
+	/*border: solid 2px black;*/
+	position: relative;
+	overflow: auto;
+	width: 48%;
+	height: 70vh;
+	 
+}
+#index1{
+	/*border: solid 2px black;*/
+	position: relative;
+	overflow: auto;
+	width: 48%;
+	height: 70vh;	 
+}
+
+#sobrenos{
+	padding: 2vh;
+	padding-left: 2.5vh;
+	color: green;
+	border-left: double 1.3vh rgba(60,179,113,0.5);
+	float:right;
+	width: 60%;
+	height: 30vh;
+	margin-top: 20vh;
+
+}
+#sobrenos h1{
+	font-weight:bold;
+	font-size: 4vh;
+	padding-bottom: 2vh;
+
+}
+#sobrenos p{font-size: 2.5vh;
+	font-weight:bold;
+	color: MediumSeaGreen;
+
+}
+/*----------------------------------------------------------------------------------------*/
+/*  SEGUNDA DIV COM A IMG*/
+
+/* ALTERAR ESSE NO ABOUT*/
+#index2{
+	width: 70%;
+	/*border: solid 2px black;*/
+	height: 80vh;
+	position: absolute;
+	right: -9%;
+}
+#indeximg{
+	width:98%;
+	height: 98%;
+}
+/*----------------------------------------------------------------------------------------*/
+/*  TERCEIRA PARTE com as IMG e informacoes*/
+.corpo1{
+	margin-left: auto;
+    margin-right: auto;
+	/*border: solid 2px black;*/
+	width: 85%;
+	height: 37vh;
+    display: flex;
+	position: relative;
+}
+.index0{
+/*	border: solid 2px black;*/
+	display: inline-block;
+	width:52vh;
+	height:35vh;
+	margin-left: auto;
+    margin-right: auto;
+    position: relative;
+	
+}
+#indeximg0{
+	width:52vh;
+	height:30vh;
+}
+
+
+.indexinfo{
+	border-left: double 1.3vh rgba(60,179,113,0.5);
+	display: inline-block;	
+	width: 50%;
+	height: 25vh;
+	padding: 2vh;
+}
+
+.indexinfo h1{
+	font-family:Tahoma;
+	font-weight:bold;
+	color: green;
+	font-size: 3vh;
+	padding-bottom: 2vh;}
+
+.indexinfo p{
+	font-family:Tahoma;
+	font-size: 2vh;
+	font-weight:bold;
+	color: MediumSeaGreen;}
+
+
+/*******************/
+
+
+
+
+
+
+
+/*----------------------------------------------------------------------------------------*/
+/*  PARTE RESPONSIVA*/
+@media(max-width: 600px){
+
+#corpo{
+	padding: -10vh;
+	z-index: -1;
+	width: 90%;
+	height: auto;
+	margin-left: 100;
+    margin-right: auto;
+    display: block;
+	/*border: solid 2px black;*/
+	position: relative;
+	
+}
+
+#index2{
+	display: none;	
+}
+#home2img{display:block;/*border: solid 2px black;*/
+	margin:0px;
+	width: 99%;
+	height: 30vh;
+	float:top;
+}
+/*----------------------------------------------------------------------------------------*/
+#index1{
+	/*border: solid 2px black;*/
+	width: 95%;
+	height: auto;
+	
+	 
+}
+.index0{
+	/*border: solid 2px black;*/
+	width: 40%;
+	height: auto;
+	
+	 
+}
+#sobrenos{
+	margin: 0px;
+	padding: 1vh;	
+	border-left: double 1.3vh rgba(60,179,113,0.5);
+	float:right;
+	width: 98%;
+	height: auto;
+}
+
+#sobrenos h1{
+	font-weight:bold;
+	font-size: 2.3vh;
+	padding-bottom: 1vh;
+}
+
+#sobrenos p{
+	font-size: 2.3vh;
+	color: MediumSeaGreen;
+}
+/*----------------------------------------------------------------------------------------*/
+.corpo1{
+	margin-top: 5vh;
+	margin-left: auto;
+    margin-right: auto;
+	border: solid 2px black;
+	width: 95%;
+	height: 37vh;
+    
+	position: relative;
+}
+.index0{
+border: solid 2px black;
+width: 95%;
+	
+}
+#indeximg0{
+	position: absolute;
+	
+	height:30vh;
+	
+  height: auto;
+  opacity: 0.3;
+}
+
+
+.indexinfo{	position: absolute;	border:none;width: 95%;}
+.indexinfo h1{	padding-bottom:2vh;color:green;	font-size: 2vh;	}
+.indexinfo p{	color:black;font-size: 2vh;
+	}
+
+
+}

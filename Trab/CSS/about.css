@@ -1,0 +1,125 @@
+/*
+paleta de cores
+https://celke.com.br/artigo/tabela-de-cores-html-nome-hexadecimal-rgb
+*/
+
+#corpo{z-index: -1;
+	color: red;
+	width: 90%;
+	height: 70vh;
+	margin-left: auto;
+    margin-right: auto;
+    display: flex;
+	/*border: solid 2px black;*/
+	position: relative;
+		
+}
+#nav{z-index: 1;}
+/*----------------------------------------------------------------------------------------*/
+/*  PRIMEIRA DIV COM SOBRE*/
+#home2img{display: none;	}
+#home1{
+	/*border: solid 2px black;*/
+	position: relative;
+	overflow: auto;
+	width: 48%;
+	height: 70vh;
+	 
+}
+
+
+#sobrenos{
+	padding: 2vh;
+	padding-left: 2.5vh;
+	color: green;
+	border-left: double 1.3vh rgba(60,179,113,0.5);
+	float:right;
+	width: 60%;
+	height: 30vh;
+	margin-top: 20vh;
+
+}
+#sobrenos h1{
+	font-weight:bold;
+	font-size: 5vh;
+	padding-bottom: 2vh;
+
+}
+#sobrenos p{font-size: 3vh;
+	font-weight:bold;
+	color: MediumSeaGreen;
+
+}
+/*----------------------------------------------------------------------------------------*/
+/*  SEGUNDA DIV COM A IMG*/
+#home2{
+		width: 70%;
+	/*border: solid 2px black;*/
+	height: 80vh;
+	position: absolute;
+	right: -9%;
+	
+}
+#indeximg{
+	width:98%;
+	height: 98%;
+}
+
+/*----------------------------------------------------------------------------------------*/
+/*  PARTE RESPONSIVA*/
+@media(max-width: 600px){
+
+#corpo{
+	padding: -10vh;
+	z-index: -1;
+	width: 90%;
+	height: auto;
+	margin-left: 100;
+    margin-right: auto;
+    display: block;
+	/*border: solid 2px black;*/
+	position: relative;
+	
+}
+
+#home2{
+	display: none;	
+}
+#home2img{display:block;/*border: solid 2px black;*/
+	margin:0px;
+	width: 99%;
+	height: 30vh;
+	float:top;
+}
+/*----------------------------------------------------------------------------------------*/
+#home1{
+	/*border: solid 2px black;*/
+	width: 95%;
+	height: auto;
+	
+	 
+}
+#sobrenos{
+	margin: 0px;
+	padding: 1vh;	
+	border-left: double 1.3vh rgba(60,179,113,0.5);
+	float:right;
+	width: 98%;
+	height: auto;
+}
+
+#sobrenos h1{
+	font-weight:bold;
+	font-size: 2.3vh;
+	padding-bottom: 1vh;
+}
+
+#sobrenos p{
+	font-size: 2.3vh;
+	color: MediumSeaGreen;
+}
+
+
+
+
+}

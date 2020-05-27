@@ -1,0 +1,44 @@
+*{
+ padding: 0;
+ margin: 0;
+ font-family: 'Arial', sans-serif;
+}
+.row{margin-top: 5vh; width: 100%;}
+
+#logo{float: left;
+	   width:10vw; 
+	   height:9vh;
+}
+.column {/*border: 2px solid black; */
+  float: left;
+  width: 31vw;
+  font-size:1.7vh;
+  color: green;
+  padding: 1vh;
+  text-align:center;
+}
+.h2footer{font-size:2.3vh;}
+
+footer div h2{
+	color: green;
+	font-size:1vh;
+	
+}
+
+
+
+@media(max-width: 600px){
+
+.column {
+  float: left;
+  width: 26vw;
+  height:14vh;
+}
+
+#logo{
+	width:20vw; 
+	height:9vh;
+
+}
+
+}

@@ -1,0 +1,22 @@
+#corpo{color: red;
+	width: 100%;
+	height: 70vh;
+	/*background-color: grey;*/
+	
+}
+#home1{overflow: auto;
+	display: inline-block;
+	width: 35%;
+	height: 80vh;
+	background-color: grey;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+#home2{display: inline-block;
+	width: 35%;
+	height: 80vh;
+	background-color: red;
+	margin-left: auto;
+    margin-right: auto;
+}
